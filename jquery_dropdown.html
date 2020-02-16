@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<style media="screen">
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font-weight: 100;
+}
+.container{
+  position: fixed;
+  top:0px;
+  left: 0px;
+  width:250px;
+  height: 100%;
+  background: #222;
+  color:#fff;
+
+
+
+}
+
+
+
+.closeNav{
+  padding: 10px 15px;
+      background: #3498db;
+      color: #fff;
+      text-align: center;
+      width: 220px;
+      z-index: 333333;
+      margin-bottom: 50px;
+      position: fixed;
+      left: 0px;
+
+}
+
+ul{
+margin: 30px;
+padding: 10px;
+
+
+}
+ul li{
+list-style: none;
+
+}
+
+ul li a{
+
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color:#fff;
+    background: #111;
+    border-bottom: 1px solid #222;
+
+
+}
+
+
+</style>
+
+</head>
+<body>
+  <div class="closeNav">Menu</div>
+  <nav class="container">
+
+
+
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+  </nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$(".closeNav").click(function(){
+$(".container").toggle(500)
+
+}
+)
+
+
+
+
+})
+</script>
+</body>
+</html>
